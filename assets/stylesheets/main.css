@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    
+}
+.hotdog {
+    background: gray;
+    text-align: center;
+}
+.hotdog ul {
+    display: inline-flex;
+    list-style: none;
+    color: #f8f8f8;
+}
+.hotdog ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.hotdog ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.active, .hotdog ul li:hover{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+h2 a{
+    color: rgb(0, 174, 255);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border: 15px dashed;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px aqua;
+    
+}
+h2 a:hover{
+    background-color: aquamarine;
+}
+h2 li{
+    float: left;
+}
+body {
+    min-height: 100svh;
+    background: url('japan.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.submenu1 {
+    display: none;
+
+}
+.hotdog ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+margin-left: -15px;
+}
+.hotdog ul li:hover .submenu1 ul {
+    display: block;
+    margin: 10px;
+}
+.hotdog ul li:hover .submenu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.hotdog ul li:hover .submenu1 ul li:last-child{
+    border-bottom: none;
+}
+.hotdog ul li:hover .submenu1 ul li a:hover{
+    color: #b2ff00;
+}
+.fa-angle-right{
+    float: right;
+}
+.submenu2{
+    display: none;
+}
+.hoverme:hover .submenu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgba(0, 100, 0);
+}
+.tt {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popins" , sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    
+}
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+    .input-box input::placeholder{
+        color: #fff;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.wrapper .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+
+}
+.remember-forget label input {
+    accent-color: #fff;
+    margin-right: 3px;
+
+}
+.remember-forget a {
+    color: #faf1f1;
+    text-decoration: none;
+}
+.remember-forget a:hover {
+    text-decoration: underline;
+
+}
+.wrapper .button{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.register-link p a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: #1e73be;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 14px;
+}
